@@ -1,0 +1,106 @@
+Opgaveark Klasser 251023 Klasse Bog
+
+
+Opgave 1)
+Implementer en klasse Bog med følgende private medlemsvariable:
+
+
+bogId: int
+titel: String
+forfatter: String
+
+
+Implementer konstruktører, setter og -getter metoder samt toString metode.
+
+
+Implementer et main, hvor der oprettes nogle Bog objekter og udskriv oplysninger om disse bøger.
+
+
+
+
+Opgave 2)
+Tilføj nu følgende private medlemsvariable til klassen Bog:
+
+
+udlant: boolean // true hvis bogen er udlånt ellers false
+laener: String //navnet på den bogen er udlånt til, hvis ikke udlånt så er laener=””
+udlaensDato: String //Datoen den er udlånt, hvis ikke udlånt så er udlaensDato=””
+
+
+
+
+Implementer er metode udlaenBog:
+
+
+public void udlaenBog(String laenerNavn, String dato){
+}
+
+
+Metoden skal sætte den private medlemsvariabel udlant til true.
+Metoden skal sætte den private medlemsvariabel laener til værdien af parameteren laenerNavn.
+Metoden skal sætte den private medlemsvariabel udlaensDato til værdien af parameteren  dato.
+
+
+Test metoden i et main, ved at udlåne en bog og udskriv oplysninger om bogen så man kan se hvem og hvornår den er udlånt.
+
+
+
+
+Opgave 3)
+Implementer en metode afleverBog:
+
+
+public void afleverBog(){
+}
+
+
+Metoden skal sætte den private medlemsvariabel udlant til false.
+Metoden skal sætte den private medlemsvariabel laener=””..
+Metoden skal sætte den private medlemsvariabel udlaensDato=”” .
+
+
+Test metoden i et main, ved at en udlånt bog afleveres og udskriv oplysninger om bogen så man kan se at den ikke længere er udlånt.
+
+
+
+
+
+
+Opgave 4)
+Implementer er klasse Laener med følgende private medlemsvariable:
+
+
+laenerID: int
+laenerNavn: String
+laenerAdresse: String
+laenerMobil: String
+
+
+Implementer konstruktører, setter og -getter metoder samt toString metode.
+
+
+Implementer et main, hvor der oprettes nogle Laener objekter og udskriv oplysninger om disse laenere.
+
+
+
+
+
+
+Opgave 5)
+Der skal nu ændres i klassen Bog.
+Den private medlemsvariabel laener skal nu være af typen klassen Laener.
+
+
+Metoden udlaenBog skal ændres til følgende:
+
+
+public void udlaenBog(Laener l, String dato){
+}
+
+
+Metoden skal stadig sætte den private medlemsvariabel udlant til true.
+Metoden skal sætte den private medlemsvariabel laener til værdien af parameteren l.
+Metoden skal stadig sætte den private medlemsvariabel udlaensDato til værdien af parameteren  dato.
+
+
+Test metoden i et main, ved at udlåne en bog og udskriv oplysninger om bogen så man kan se oplysninger om låneren og hvornår den er udlånt.
