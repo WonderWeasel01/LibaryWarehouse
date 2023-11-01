@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Opgave 1
-        Boger B1 = new Boger(1,"Junji ito", "Uzumaki");
+        //Bog B1 = new Bog();
         //System.out.println(B1);
 
         //Opgave 2
@@ -18,8 +18,8 @@ public class Main {
         //System.out.println(L1);
 
         //Opgvave 5
-        B1.udlaanBog(L1, "10/25-2023");
-        System.out.println(B1);
+        //B1.udlaanBog(L1, "10/25-2023");
+        //System.out.println(B1);
 
     }
 }

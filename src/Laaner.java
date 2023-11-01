@@ -1,57 +1,66 @@
 public class Laaner {
-    private int LaanerID;
+    int laanerID;
+    String laanerNavn;
+    String laanerAdresse;
+    String laanerMobil;
 
-    private String LaanerNavn;
-    private String LaanerAdresse;
+    public Laaner(int laanerID, String laanerNavn, String laanerAdresse, String laanerMobil){
+        this.laanerID = laanerID;
+        this.laanerNavn=laanerNavn;
+        this.laanerAdresse = laanerAdresse;
+        this.laanerMobil = laanerMobil;
+    }
 
-    private String LaanerMobil;
-
-    public Laaner(int laanerID, String laanerNavn, String laanerAdresse, String laanerMobil) {
-        LaanerID = laanerID;
-        LaanerNavn = laanerNavn;
-        LaanerAdresse = laanerAdresse;
-        LaanerMobil = laanerMobil;
+    public Laaner(int laanerID, String laanerNavn) {
+        this.laanerID = laanerID;
+        this.laanerNavn = laanerNavn;
     }
 
     public int getLaanerID() {
-        return LaanerID;
+        return laanerID;
     }
 
     public void setLaanerID(int laanerID) {
-        LaanerID = laanerID;
+        this.laanerID = laanerID;
     }
 
     public String getLaanerNavn() {
-        return LaanerNavn;
+        return laanerNavn;
     }
 
     public void setLaanerNavn(String laanerNavn) {
-        LaanerNavn = laanerNavn;
+        this.laanerNavn = laanerNavn;
     }
 
     public String getLaanerAdresse() {
-        return LaanerAdresse;
+        return laanerAdresse;
     }
 
     public void setLaanerAdresse(String laanerAdresse) {
-        LaanerAdresse = laanerAdresse;
+        this.laanerAdresse = laanerAdresse;
     }
 
     public String getLaanerMobil() {
-        return LaanerMobil;
+        return laanerMobil;
     }
 
     public void setLaanerMobil(String laanerMobil) {
-        LaanerMobil = laanerMobil;
+        this.laanerMobil = laanerMobil;
     }
 
     @Override
     public String toString() {
         return "Laaner{" +
-                "LaanerID=" + LaanerID +
-                ", LaanerNavn='" + LaanerNavn + '\'' +
-                ", LaanerAdresse='" + LaanerAdresse + '\'' +
-                ", LaanerMobil='" + LaanerMobil + '\'' +
+                "laanerID=" + laanerID +
+                ", laanerNavn='" + laanerNavn + '\'' +
+                ", laanerAdresse='" + laanerAdresse + '\'' +
+                ", laanerMobil='" + laanerMobil + '\'' +
                 '}';
+    }
+
+    public static void main(String [] args){
+        Laaner laaner1 = new Laaner(2,"Mads","Hørve","iphone");
+        System.out.println(laaner1);
+
     }
 }

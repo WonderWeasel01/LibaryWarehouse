@@ -1,0 +1,38 @@
+Opgaveark ArrayList 311023
+
+Opgave 1)
+Brug Bog klassen vi har arbejdet med tidligere.
+I main skal der nu oprettes en ArrayList af klassen Bog.
+Indsæt nogle bøger i ArrayListen.
+
+Opgave 2)
+Lav en funktion udskrivBoeger(ArrayList<Bog> liste)
+Funktionen skal udskrive alle bøger i listen liste.
+
+Opgave 3)
+Lav en funktion public static void tilfoejBog(ArrayList<Bog> liste, Bog b)
+Funktionen skal tilføje bogen b til listen l.
+
+Opgave 4)
+Lav en funktion public static int antalBoeger(ArrayList<Bog> liste)
+Funktionen skal returnere antal bøger i listen liste.
+
+Opgave 5)
+Lav en funktion public static void fjernBog(ArrayList<Bog> liste,Bog b)
+Funktionen skal fjerne bogen b fra listen liste.
+
+Opgave 6)
+Lav en funktion public static boolean erIbogListen(ArrayList<Bog> liste,Bog b)
+Funktionen skal returnere true hvis bogen b er i listen liste ellers false.
+
+Opgave 7)
+Lav en funktion
+public static void tilfoejBog(ArrayList<Bog> liste,int nr, String t,String f,boolean u,
+                                                                                                              String d,Laener l)
+
+
+Funktionen skal både oprette bogen med new og indsætte bogen i listen liste.
+
+
+Opgave 8)
+Lav ændringer i biblioteks klassen fra sidste gang, så den anvender datastrukturen ArrayList i stedet for et Array.
